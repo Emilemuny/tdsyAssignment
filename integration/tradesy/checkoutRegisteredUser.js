@@ -31,4 +31,12 @@ context('Checkout With Guest User', () => {
     cy.get('.checkout__right-column > .checkout-order-summary__button-wrapper > .order-submit > .btn').click() // Place Order
   })
 
+  // The contents of the above it, should be broken into several small steps each having their own validation points.
+  // Example: - Add items to the shopping bag. Validate (add assertions) that the items were added.
+  //           - Go to the checkout page. Validate the items is added to the checkout by looking at number of items, price and url.
+  //           - Add shipping info. Validate shipping info is added properly
+  //           - Add payments. Validate payment is added by adding assertions to verify last four digits of the card could be seen at the payment section
+  //           - Add assertions to verify the "Review Order" section. assertions for shipping, tax and totals.
+  //
+
 })
