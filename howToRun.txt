@@ -1,0 +1,14 @@
+How to run this test scripts:
+
+
+
+1. Clone the tdsyAssignment Git Repo : https://github.com/Emilemuny/tdsyAssignment.git
+2. Install Docker: https://www.docker.com/
+3. Install nodejs, npm, cypress and fakerjs.
+3. Cd into the project and enter command:
+   docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.4.0
+
+   Explanation of the "docker run" command line arguments
+       -it          = interactive terminal
+       -v $PWD:/e2e = map current folder to /e2e inside the container
+       -w /e2e      = set working directy to /e2e

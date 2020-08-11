@@ -26,7 +26,6 @@ context('Checkout With Guest User', () => {
     cy.get('.js-login-tab-guest').click()
     cy.get('.checkout-login__guest > :nth-child(2) > .btn').click()
     cy.addShippingAddress(custFirstName, custLastName, custEmail)
-    cy.wait(5000)
     cy.get('#checkout-onsite').check({force: true}).should('be.checked') // Select Payment Method Credit/Debit Card
     cy.addDebitCreditPaymentInfo(custFirstName, custLastName)
     cy.get('.checkout__right-column > .checkout-order-summary__button-wrapper > .order-submit > .btn').click() // Place Order
