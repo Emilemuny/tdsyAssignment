@@ -1,0 +1,44 @@
+[
+  {
+    "itemNo": 171201,
+    "price": "33.50",
+    "itemDescription": "Nuit Perfume Fragrance",
+    "brand": "Prada",
+    "category": "Clothing"
+  },
+  {
+    "itemNo": 171789,
+    "price": "89.00",
+    "itemDescription": "Colorblock Beige Dark Red and Navy Blue Jacket",
+    "brand": "Prada",
+    "category": "Clothing"
+  },
+  {
+    "itemNo": 171838,
+    "price": "250.50",
+    "itemDescription": "Sunglasses Comes with Case",
+    "brand": "Chanel",
+    "category": "Accessories"
+  },
+  {
+    "itemNo": 172440,
+    "price": "160.50",
+    "itemDescription": "new Dark Teal Skinny Jeans",
+    "brand": "AG Adriano Goldschmied",
+    "category": "Jeans"
+  },
+  {
+    "itemNo": 173185,
+    "price": "399.50",
+    "itemDescription": "Black Leather Meyer Plaque Tote",
+    "brand": "Tory Burch",
+    "category": "Bags"
+  },
+  {
+    "itemNo": 173278,
+    "price": "48.50",
+    "itemDescription": "Juliette Grey Multi Pumps",
+    "brand": "Nine West",
+    "category": "Shoes"
+  }
+]
