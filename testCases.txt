@@ -1,0 +1,89 @@
+Test Cases on /cart:
+
+Functional:
+
+1. Complete a sale transaction with a guest user:
+
+  Step 1. Go to https://t1.qa.tradesy.com/
+  	   2. Lookup items add items to the bag
+  		 3. Go to Checkout
+  		 4. Add shipping Address
+  		 5. Select Payment Method and enter Debit/Credit details, Add Card
+  		 6. Review order
+  		 7. Place Order
+
+   Validate: - Validate order (totals, tax, shipping) is placed properly under a guest user,
+             - Validate email receipts
+             - Validate order integrations (other integrations)
+
+2. Complete a sale transaction with a registered account
+
+  Step 1. Go to https://t1.qa.tradesy.com/
+       2. Login with a registered user account
+       2. Lookup items add items to the bag
+       3. Go to Checkout
+       4. Add shipping Address
+       5. Select Payment Method and enter Debit/Credit details, Add Card
+       6. Review order
+       7. Place Order
+
+  Validate: - Validate order (totals, tax, shipping) is placed properly under a registered user account,
+            - Validate account purchase history is updated properly. https://t1.qa.tradesy.com/your-purchases
+            - Validate email receipts
+            - Validate order integrations (other integrations)
+
+ 3. Checkout items from the Favorites list
+
+ Step 1. Go to https://t1.qa.tradesy.com/
+      2. Login with a registered user account
+      3. Lookup items and Select/Click "Heart icon" to Save to Favorites
+      4. Go to Favorites by clicking the top bar menu Heart icon
+      5. Add the item from the Favorites to the shopping bag
+      6. Go to Checkout
+      7. Skip Add shipping & Payment Method if already saved/pre-selected
+      8. Review order
+      9. Place Order
+
+  Validate: - Validate Favorites items could be found https://t1.qa.tradesy.com/closet/9087714/favorites/
+            - Validate Favorites items could be checked out.
+
+ 4.Payment Methods:
+
+      4.1. Checkout with Credit/Debit
+
+           - Validate payment with valid Credit and Debit data
+           - Validate saved payment info on registered user could be retrieved
+           - Validate submission of invalid payment data (Card Number, Expiration date, CVC) returns appropriate error
+
+      4.3. Checkout with PayPal account
+
+      4.4. Checkout with Affirm
+
+      4.5. Apply Promotions and gift cards at Checkout
+
+           - Validate apply promotions at checkout
+           - Validate apply multiple promotions
+           - Validate apply gift card at checkout
+           - Validate apply multiple gift card at checkout
+           - Validate apply promotions and gift card at checkout
+           - Validate invalid promo (expired, invalid validating item(s), invalid validating user) or gift card returns appropriate error.
+
+ 5. Remove items from the cart
+
+    - Validate items could be removed from the checkout.
+
+ 6. Checkout with Multiple 100 items
+
+    - Validate user is able to add multiple items to the cart.
+
+
+Non-Functional
+
+1. Verify performance while adding an item to the checkout
+   - Should meet performance expectation
+2. Verify performance while adding multiple items (10+) to the checkout
+   - Should meet performance expectation
+3. Multi-user logins
+   - Should meet performance expectation
+4. Multi-user checkouts
+   - Should meet performance expectation
